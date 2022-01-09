@@ -3,4 +3,4 @@ sum(total_deaths) as total_deaths, sum(new_deaths) as total_new_deaths, sum(new_
 sum(total_recovered) as overall_recovered
 from
 {{ source('COVID_19_INDONESIA_SATHYANARAYANAN_CV','COVID_19_INDONESIA_SATHYANARAYANAN_CV')}}
-group by 1;
+group by 1
