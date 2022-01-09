@@ -7,4 +7,4 @@ from
 {{ source('COVID_19_INDONESIA_SATHYANARAYANAN_CV','COVID_19_INDONESIA_SATHYANARAYANAN_CV')}}
  where island != 'NULL' or island is not null 
 group by 1
-  );
+  )
