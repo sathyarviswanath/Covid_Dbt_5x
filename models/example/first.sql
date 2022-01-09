@@ -1,3 +1,3 @@
-select location, count(1)
+select location, count(1) as counts
 from
 FIVETRAN_INTERVIEW_DB.GOOGLE_SHEETS.COVID_19_INDONESIA_SATHYANARAYANAN_CV
