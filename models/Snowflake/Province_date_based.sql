@@ -10,4 +10,4 @@ sum(total_recovered) as overall_recovered
 {{ source('COVID_19_INDONESIA_SATHYANARAYANAN_CV','COVID_19_INDONESIA_SATHYANARAYANAN_CV')}}
    group by 1,2,3,4
   )
-  order by 1 desc, 12 desc ;
+  order by 1 desc, 12 desc 
