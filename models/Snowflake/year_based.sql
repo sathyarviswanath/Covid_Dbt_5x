@@ -1,6 +1,6 @@
 select * , round(overall_recovered/overall_cases,2)*100 as rate_of_recovered 
 from (
-  select right(date,4),location, sum(distinct total_districts), sum(distinct total_cities),
+  select right(date,4) as year,location, sum(distinct total_districts), sum(distinct total_cities),
  sum(new_active_cases) as total_new_active_cases, sum(new_cases) as total_new_cases, sum(total_cases) as overall_cases,
 sum(total_deaths) as total_deaths, sum(new_deaths) as total_new_deaths, sum(new_recovered) as total_new_cases_recovered,
 sum(total_recovered) as overall_recovered
